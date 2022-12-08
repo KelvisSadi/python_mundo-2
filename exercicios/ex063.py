@@ -10,4 +10,5 @@ while n > 0:
     atual = proximo#e o termo do meio recebe o que foi calculado, assim todos os termos foram atualizados e podemos calcular o próximo no looping
     n -= 1
 print('teste')
-print('olá')
+
+#ex: [f1= 1, f2= 0, f3=?] -> [f1= 1, f2= 0, f3= f1 + f2]
