@@ -1,9 +1,10 @@
+from time import sleep
 print('Calculadora?')
 n1 = float(input('Digite o primeiro valor:'))
 n2 = float(input('Digite o segundo valor:'))
 opçoes = 0
 while opçoes != 5:#enquanto opçoes for diferente de 5 faça
-    print('''
+    print('''--------------------------
     [Escolha a operação]
     [ 1 ] somar
     [ 2 ] multiplicar
@@ -14,6 +15,8 @@ while opçoes != 5:#enquanto opçoes for diferente de 5 faça
     [ 5 ] sair do programa
     ''')
     opçoes = int(input('Sua escolha:'))#opçoes recebe um inteiro
+    print('Calculando...')
+    sleep(0.8)
     if opçoes == 1:#se opçoes igual a 1 faça
         soma = n1 + n2
         print(f'A soma entre {n1} + {n2} é igual a {soma:.2f}')
@@ -31,9 +34,10 @@ while opçoes != 5:#enquanto opçoes for diferente de 5 faça
         n1 = float(input('Digite um novo primeiro valor:'))
         n2 = float(input('Digite um novo segundo valor:'))
     elif opçoes == 5:
-        print('Programa finalizado.')
+        print('Finalizando programa...')
     else:#senao se opçoes maior que 5 faça
         print('Opção invalida! Escolha umas dessas opções:[1][2][3][4][5]')
+    sleep(1.2)
 
 
 
