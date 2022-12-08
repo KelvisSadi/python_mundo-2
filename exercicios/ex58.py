@@ -1,6 +1,6 @@
 from random import randint
 quantidade_tentativas = 0
-n_aleatorio = randint(1, 11)
+n_aleatorio = randint(1, 10)
 acertou = False
 print('Tente acertar o número mágico entre 1 e 10')
 while not acertou:#enquanto acertou for falso
@@ -12,4 +12,4 @@ while not acertou:#enquanto acertou for falso
         print('Menos... Tente novamente!')
     else:#se nao faça
         acertou = True
-print(f'Você acertou o número mágico que era {n_aleatorio} em {quantidade_tentativas} tentativas')
+print(f'Você acertou o número mágico [{n_aleatorio}] em {quantidade_tentativas} tentativas! Parabéns!!')
