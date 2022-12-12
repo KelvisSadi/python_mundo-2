@@ -13,23 +13,24 @@ while True:
     n = int(input('Agora digite o valor:'))# variavel escolha
     print('-'*50)
     soma = pc + n
-    #par impar
+    #se a escolha for P ou I faça
     if escolha == 'P' or escolha == 'I':
-        if soma % 2 == 0:
+        if soma % 2 == 0:#Se o resto da divisão da {soma} por 2 for 0 faça
             PouI = 'PAR'
-        else:
+        else:            #se nao
             PouI = 'IMPAR'
         print(f'Você jogou {n}, o computador jogou {pc}. Total de {soma} deu {PouI}')
-        if PouI == 'PAR' and escolha == 'P' or PouI == 'IMPAR' and escolha == 'I':
+        if PouI == 'PAR' and escolha == 'P' or PouI == 'IMPAR' and escolha == 'I':#se escolheu par e a soma deu par ganhou, se escolheu impar e a soma deu impar ganhou
             print('\nGANHOU!\n'*3)
             print('-'*50)
             print('COMPUTADOR: Me de mais uma chance!')
-        else:
+        else:                                                                     #se não
             print(f'Perdeu! depois de {c} vitórias consecutivas')
             print('-'*50, '\nObrigado por Jogar. Volte sempre!' )
             break
         c += 1
-    print('Opção invalida... Esolha [P] ou [I]')
+    else:
+        print('Opção invalida... Esolha [P] ou [I]')
 
 
 
