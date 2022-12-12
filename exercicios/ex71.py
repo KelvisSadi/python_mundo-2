@@ -23,3 +23,4 @@ print(f'Total de {notas_10} cédulas de R$10')
 print(f'Total de {notas_1} cédulas de R$1')
 print('-'*40)
 print(f'{"Volte sempre ao nosso BANCO":^40}')
+#dar opções de mais notas de 20, ou 10, como em um caixa de verdade
