@@ -27,4 +27,8 @@ while True:# enquanto infinito n1
             break#break n3
     if continuar == 'N':
         break#break n1
-print(f'Ao todo foram lidos {participantes} participantes, {qtd_homens_cadastrados} homens cadastrados e {qtd_mulheres_menos_20} mulheres com menos de 20 anos!')
+print(f'{" FIM DO PROGRAMA ":-^40}')
+print(f'{participantes} participantes!')
+print(f'{qtd_homens_cadastrados} homens cadastrados!')
+print(f'{qtd_mulheres_menos_20} mulheres com menos de 20 anos!')
+print(f'{qtd_maiores_18} pessoas com mais de 18 anos!')
