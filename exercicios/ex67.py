@@ -1,5 +1,4 @@
 print('Tabuada V3')
-n = 0
 while True:  # while infinito n1
     print('-'*40)
     n = int(input('Quer ver a tabuada de qual valor?'))
